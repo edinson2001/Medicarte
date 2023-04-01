@@ -227,25 +227,26 @@ a:hover{
     
 }
 
-.cards img{
-    width: 100%;
-    height: 15rem;
-    display: flex;
-    align-items: center;
-}
+.cover{
+    height: 150px;
+    color:black;
+    background-size: cover;
+    background-position: center;
+ }
 
-.cards{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 10px 20px 10px;
-    
-}
+ .cover-samll{
+    height: 150px;
+ }
 
-.cards .card{
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
+ .card{
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,1), 0px 2px 4px -1px rgba(0,0,0,0.06);
+    display: inline-block;
+ }
+
+
+
+
 
 #noticias .btn{
     background-color: #19CE67;
