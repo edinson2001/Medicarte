@@ -109,8 +109,8 @@ a:hover{
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(15px);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
     border-radius: 10px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
@@ -180,35 +180,22 @@ a:hover{
     }
 
     .dropdown_menu{
+        left: 0rem;
         top: 0px;
-        left: 40rem;
+        width: unset;
+        z-index: 99;
     }
 
     .doc{
         display: none;
     }
     #bienvenida{
-        left: 2rem;
+        left: .5rem;
         transition: .5s;
     }
 }
 
 /*el hjp responsive del dropmenu*/
-@media(max-width: 829px) and (min-width: 776px){
-    .dropdown_menu{
-        top: 0px;
-        left: 29.5rem;
-        z-index: 99;
-    }
-}
-
-@media(max-width: 776px){
-    .dropdown_menu{
-        top: 0px;
-        left: 18.5rem;
-        z-index: 99;
-    }
-}
 
 
 @media(max-width: 592px){
@@ -231,6 +218,13 @@ a:hover{
     left: 5.5rem;
     color: #19CE67;
     margin-top: 30px;
+}
+
+@media (max-width:992px){
+    #titulo{
+        left:.5rem;
+    }
+    
 }
 
 .cards img{
