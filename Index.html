@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Inicio</title>
+   
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="">Medicarte</a></div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Servicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <a href="" class="btn_action">Empezar</a>
+            <div class="btn_toggle">
+                <i class="fa-regular fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="#">Home</a></li>
+                <li><a href="#">Servicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="" class="btn_action">Empezar</a></li>
+        </div>
+
+        <img  class="doc" src="../Proyecto/imagenes/asset/pngwing.com.png 1.png" alt="">
+
+        <div id="bienvenida">
+            <h1 style="color: #19CE67;">Bienvenido</h1>
+            <p>Este sitio fue creado para agilizar los procesos de la entrega de los medicamentos.</p>
+        </div>
+       
+    </header>
+
+    <main>
+        <Section id="noticias">
+            <h1 id="titulo">Noticias</h1>
+
+        <div class="cards">
+            <div class="row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                  <div class="card">
+                    <img src="../tra/Opcion señas.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <img src="../tra/Opcion texto.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <a href="#" class="btn ">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+         </div>
+
+         <div class="cards2">
+            <div class="card text-center">
+                <div class="card-header">
+                  Featured
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn">Go somewhere</a>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  2 days ago
+                </div>
+              </div>
+         </div>
+        </Section>
+    </main>
+
+
+    <script>
+        const toggleBtn=document.querySelector('.btn_toggle')
+        const toggleBtnIcon=document.querySelector('.btn_toggle i')
+        const dropDownMenu=document.querySelector('.dropdown_menu')
+        
+        
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+        
+            toggleBtnIcon.classList = isOpen
+               ? 'fa-solid fa-xmark'
+               : 'fa-solid fa-bars'
+        
+        }
+        </script>
+</body>
+</html>

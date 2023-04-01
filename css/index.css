@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+    
+    
+    
+}
+
+header{
+    width: 100%;
+    height: 518px;
+    background-image: url(https://marvel-live.freetls.fastly.net/canvas/2023/3/0c92c8654530435faab3435438752517?quality=95&fake=.png);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    
+  
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: #19CE67;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .btn_toggle{
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.btn_action{
+    background-color:  #19CE67;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.btn_action:hover{
+    color: black;
+    scale: 1.05;
+}
+
+.btn_action:active{
+    scale: 0.95;
+}
+
+
+
+/*IMAGEN DOCTOR BANNER*/
+
+.doc{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    left: 58rem;
+    width: 411px;
+    height: 457px;
+}
+
+/*  DROPDOWN MENU*/
+.dropdown_menu{
+    display: none;
+    position: relative;
+    right: -2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .btn_action{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* BIENVENIDA*/
+#bienvenida{
+    top: 227px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 5.5rem;
+
+
+}
+
+/*Responsive prueba*/
+@media(max-width:1200px){
+    .doc{
+        left: 40rem;
+        transition: 0.5s;
+    }
+
+}
+
+
+/* DISEÑO RESPONSIVE */
+@media(max-width: 992px){
+
+
+   
+    .navbar{
+        margin: -6px auto;
+        transition: .5s;
+    }
+
+    .navbar .links, 
+    .navbar .btn_action{
+        display: none;
+    }
+
+    .navbar .btn_toggle{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+
+    .dropdown_menu{
+        top: 0px;
+        left: 40rem;
+    }
+
+    .doc{
+        display: none;
+    }
+    #bienvenida{
+        left: 2rem;
+        transition: .5s;
+    }
+}
+
+/*el hjp responsive del dropmenu*/
+@media(max-width: 829px) and (min-width: 776px){
+    .dropdown_menu{
+        top: 0px;
+        left: 29.5rem;
+        z-index: 99;
+    }
+}
+
+@media(max-width: 776px){
+    .dropdown_menu{
+        top: 0px;
+        left: 18.5rem;
+        z-index: 99;
+    }
+}
+
+
+@media(max-width: 592px){
+
+    .dropdown_menu{
+        left: .2rem;
+        right: .2rem;
+        width: 98%;
+        z-index: 99;
+    }
+
+
+
+}
+
+/*CARTAS DE NOTICIAS*/
+#titulo{
+    position: relative;
+    display: flex;
+    left: 5.5rem;
+    color: #19CE67;
+    margin-top: 30px;
+}
+
+.cards img{
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px 20px 10px;
+    
+}
+
+.cards .card{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#noticias .btn{
+    background-color: #19CE67;
+}
+#noticias .btn:hover{
+    background-color: #19CE67;
+    scale: 1.05;
+}
+
+.cards2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+.cards2 .card{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
